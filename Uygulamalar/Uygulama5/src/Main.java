@@ -24,9 +24,10 @@ public class Main {
         ondalikliListe.ekle(533.0f);
         ondalikliListe.ekle(876.2f);
         ondalikliListe.ekle(11.1f);
+        Object x;
         var siraliOndalikliListe = ondalikliListe.siraliAl();
         for(var eleman:siraliOndalikliListe)
-            System.out.println(eleman);
+            System.out.println(eleman.toString());
         var doubleListe = new SiraliListe<Double>();
         var x = new ArrayList<String>();
         //var y = new SiraliListe<String>();
