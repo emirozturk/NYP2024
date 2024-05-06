@@ -15,7 +15,7 @@ class DiziIslemleri{
         return toplam == a;
     }
     static int enbuyuk(int[] dizi){
-        int enbuyuk = 0;
+        int enbuyuk = dizi[0];
         for (int j : dizi) {
             if (j > enbuyuk) {
                 enbuyuk = j;
