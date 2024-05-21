@@ -30,12 +30,12 @@ public class Main {
     public static List<Integer> streamApi(ArrayList<Integer> liste){
 
         return liste.stream()
-                .filter(eleman->eleman>50)
-                .skip(5)
-                .limit(5)
-                .map(eleman->eleman*eleman)
-                .sorted()
-                .toList();
+                 .filter(eleman -> eleman > 50) // 50'den büyük sayıları filtreleme
+                .skip(5)                        // İlk 5 elemanı atlama
+                .limit(5)                       // Sonraki 5 elemanı alma
+                .map(eleman -> eleman * eleman) // Seçilen sayıların karelerini alma
+                .sorted()                       // Kareleri küçükten büyüğe sıralama
+                .toList();                      // Sonuçları liste olarak döndürme
     }
     public static void main(String[] args) {
         var liste = new ArrayList<Integer>();
